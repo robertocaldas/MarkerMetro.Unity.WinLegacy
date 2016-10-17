@@ -13,8 +13,9 @@ namespace MarkerMetro.Unity.WinLegacy
     public class AppDomain
     {
         private static readonly AppDomain instance = new AppDomain();
-
+#pragma warning disable 0169
         private Assembly[] assemblies;
+#pragma warning restore 0169
 
         public static AppDomain CurrentDomain
         {

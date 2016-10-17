@@ -96,16 +96,18 @@ namespace MarkerMetro.Unity.WinLegacy.Reflection.Tests
         {
             [TestAttribute]
             public string BaseProperty { get; set; }
-
+#pragma warning disable 0649
             public string BaseField;
+#pragma warning restore 0649
         }
 
         class DerivedClass : BaseClass
         {
             public string DerivedProperty { get; set; }
 
-
+#pragma warning disable 0649
             public string DerivedField;
+#pragma warning restore 0649
         }
 
         public class TestAttribute : System.Attribute
